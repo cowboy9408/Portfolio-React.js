@@ -6,28 +6,28 @@ import 'aos/dist/aos.css';
 
 // 예제 프로젝트 데이터 (실제 데이터는 props로 전달 가능)
 const projectData = [
-  {
-    name: 'Project Xafe',
-    descr: 'An innovative project that solves problems.',
-    demo: 'https://demo-project-alpha.com',
-    tags: [{ tag: 'Vue.js' }, { tag: 'JavaScript' }]
-  },
-  {
-    name: 'Project BjMCU',
-    descr: 'An interesting project with a new approach.',
-    demo: 'https://github.com/user/opensource1',
-    tags: [{ tag: 'Node.js' }, { tag: 'JavaScript' }, { tag: 'Express.js' }]
-  },
-  {
-    name: 'Project Xchat',
-    descr: 'An interesting project with a new approach.',
-    demo: 'https://github.com/user/opensource1',
-    tags: [{ tag: 'React.js' }, { tag: 'JavaScript' }]
-  },
+
 ];
 
 const githubRepos = [
- 
+ {
+  name: 'Project Xafe',
+  description: 'An innovative project that solves problems.',
+  html_url: 'https://github.com/cowboy9408/Xafe-Vue.js-',
+  topics: ['JavaScript', 'Vue.js']
+ },
+ {
+  name: 'Project BJMCU',
+  description: 'An innovative project that solves problems.',
+  html_url: 'https://github.com/cowboy9408/BJMCU-Node.js--',
+  topics: ['JavaScript', 'Node.js', 'Express.js', 'MongoDB']
+ },
+ {
+  name: 'Project Xchat',
+  description: 'An innovative project that solves problems.',
+  html_url: 'https://github.com/cowboy9408/Xchat-react.js-',
+  topics: ['JavaScript', 'React.js', 'styled-component',]
+ },
 
 ];
 
@@ -85,7 +85,8 @@ const Tag = styled.span`
   margin-right: 5px;
   font-size: 0.875rem;
   box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5), inset 2px 2px 5px rgba(255, 255, 255, 0.2);
-
+  position:relative;
+  top:5px;
 `;
 
 const Projects = () => {
