@@ -4,26 +4,41 @@ import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 const timelineData = [
   {
-    title: 'Started New Project',
-    date: '2021-03',
-    subtitle: 'Initiated a new project with a small team. Aiming to revolutionize the tech industry by creating a more intuitive UI/UX.',
-    tags: ['JavaScript', 'React'],
+    title: '국비 지원 교육을 시작으로....',
+    date: '2022-05',
+    subtitle: '어깨 너머로만 보던 IT 분야... 직접 공부하고 배우면서 꿈을 키우게됩니다.',
+    tags: ['Turning Point'],
     titleUrl: '#',
   },
   {
-    title: 'Project Launch',
-    date: '2021-08',
-    subtitle: 'Successfully launched the project after months of hard work, featuring innovative features and seamless design.',
-    tags: ['Launch', 'Success'],
+    title: 'IT 개발자로써의 첫 커리어',
+    date: '2022-11',
+    subtitle: 'IT 개발자로서 첫 취직을 해 꿈을 향해 달려가 볼 수 있는 기회를 얻었습니다.',
+    tags: ['First Career'],
     titleUrl: '#',
   },
   {
-    title: 'First Milestone',
-    date: '2022-02',
-    subtitle: 'Reached 1,000 users in the first few months after launch. Gained valuable user feedback and insights.',
-    tags: ['Milestone', 'Growth'],
+    title: 'IT 개발자로서의 첫 실무',
+    date: '2023-01',
+    subtitle: '본격 커리어의 시작! 처음으로 팀원들과 업무에 대해 회의를 진행하면서 협업을 진행해보았습니다. 이름하여 Xafe 프로젝트!',
+    tags: ['Vue.js', 'First Project'],
+    titleUrl: '#',
+  },
+  {
+    title: '팀의 업무 효율에 지대한 기여를 하다.',
+    date: '2024-03',
+    subtitle: '저의 기획으로 탄생한 BJMCU 프로젝트! 모듈 테스트 간소화를 통해 팀 업무에 기여했습니다.',
+    tags: ['Node.js','Express.js', 'Second Project'],
+    titleUrl: '#',
+  },
+  {
+    title: '한걸음 더 나아가다.',
+    date: '2024-10',
+    subtitle: '실시간 메신저 웹 애플리케이션을 개발을 진행하게 되면서 디자인도 맡아서 기획해 볼 수 있었고, React.js라는 언어와 저에 대해 보다 심층적으로 접근해 볼 수 있었습니다.',
+    tags: ['React.js', 'Third Project'],
     titleUrl: '#',
   },
   // 추가 이벤트...
@@ -179,8 +194,8 @@ const Timeline = () => {
 
   return (
     <TimelineWrapper>
-      <SectionTitle>My Journey</SectionTitle>
-      <SectionSubtitle>Explore the key milestones in my career</SectionSubtitle>
+      <SectionTitle>My IT Journey</SectionTitle>
+      <SectionSubtitle>저의 발자취를 간략하게 보여드립니다!</SectionSubtitle>
       <TimelineList>
         {timelineData.map((event, index) => (
           <TimelineItem key={index} side={index % 2 === 0 ? 'left' : 'right'}>
@@ -188,7 +203,7 @@ const Timeline = () => {
               side={index % 2 === 0 ? 'left' : 'right'}
               data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
             >
-              <EventTitle href={event.titleUrl} target="_blank" rel="noreferrer">
+              <EventTitle  target="_blank" rel="noreferrer">
                 {event.title}
               </EventTitle>
               <EventDate>{event.date}</EventDate>

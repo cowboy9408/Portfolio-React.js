@@ -109,13 +109,15 @@ const Title = styled.h1`
 `;
 
 const FilterButton = styled.label`
-  background: linear-gradient(
+   background: linear-gradient(
     145deg,
     rgba(100, 100, 105, 0.15) 15%,
     rgba(33, 33, 33, 0.4) 80%
   );
-  box-shadow: -4px -3px 2px 0 rgba(250, 250, 250, 0.13),
-    4px 4px 2px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: ${(props) =>
+    props.active
+      ? 'inset -4px -3px 2px rgba(250, 250, 250, 0.13), inset 4px 4px 2px rgba(0, 0, 0, 0.4)'
+      : '-4px -3px 2px 0 rgba(250, 250, 250, 0.13), 4px 4px 2px 0 rgba(0, 0, 0, 0.4)'};
   padding: 10px 30px;
   border-radius: 12px;
   margin: 10px;
@@ -123,7 +125,7 @@ const FilterButton = styled.label`
   color: #fff;
   font-weight: bold;
   transition: all 0.3s ease;
-  position:relative;
+  position: relative;
   bottom: 40px;
 
   &:hover {
@@ -167,11 +169,11 @@ const SkillItem = styled.div`
   }
 `;
 
-const Skills = () => {
+function Skills() {
   const [filter, setFilter] = useState('all');
 
-  const handleFilterChange = (type) => {
-    setFilter(type);
+  const handleFilterChange = (category) => {
+    setFilter(category);
   };
 
   const filteredSkills = [
@@ -185,11 +187,21 @@ const Skills = () => {
     <Container>
       <Title>My Skills</Title>
       <div>
-        <FilterButton onClick={() => handleFilterChange('all')}>All</FilterButton>
-        <FilterButton onClick={() => handleFilterChange('language')}>Languages</FilterButton>
-        <FilterButton onClick={() => handleFilterChange('framework')}>Frameworks</FilterButton>
-        <FilterButton onClick={() => handleFilterChange('database')}>Database</FilterButton>
-        <FilterButton onClick={() => handleFilterChange('tool')}>Tools</FilterButton>
+        <FilterButton onClick={() => handleFilterChange('all')} active={filter === 'all'}>
+          All
+        </FilterButton>
+        <FilterButton onClick={() => handleFilterChange('language')} active={filter === 'language'}>
+          Languages
+        </FilterButton>
+        <FilterButton onClick={() => handleFilterChange('framework')} active={filter === 'framework'}>
+          Frameworks
+        </FilterButton>
+        <FilterButton onClick={() => handleFilterChange('database')} active={filter === 'database'}>
+          Database
+        </FilterButton>
+        <FilterButton onClick={() => handleFilterChange('tool')} active={filter === 'tool'}>
+          Tools
+        </FilterButton>
       </div>
       <SkillsContainer id="skills">
         {filteredSkills.map((skill, index) => (
@@ -197,16 +209,15 @@ const Skills = () => {
             key={index}
             skill-type={skill.type}
             skill-weight={Math.ceil(skill.weight / 20)}
-            weight={Math.ceil(skill.weight / 20)} /* 가중치로 크기 조절 */
+            weight={Math.ceil(skill.weight / 20)}
             data-aos="zoom-in"
           >
-
-            <img src={skill.image} alt={`${skill.name} logo`} /> {/* 이미지만 렌더링 */}
+            <img src={skill.image} alt={`${skill.name} logo`} />
           </SkillItem>
         ))}
       </SkillsContainer>
     </Container>
   );
-};
+}
 
 export default Skills;

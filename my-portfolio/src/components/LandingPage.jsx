@@ -1,7 +1,7 @@
 // LandingPage.js
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { FaLinkedin, FaTwitter, FaFacebook, FaGoogle, FaPinterest } from 'react-icons/fa';
+import { FaEnvelope, FaGoogle, FaInstagram, FaComments, FaGithub } from 'react-icons/fa';
 import SocialIcon from './SocialIcon';
 import TypingText from './TypingText';
 import AboutMe from './AboutMe';
@@ -81,11 +81,11 @@ const LandingPage = () => {
           </TypingContainer>
         </Subtitle>
         <IconContainer data-aos="fade-up" data-aos-delay="400">
-          <SocialIcon href="https://twitter.com" color="#1DA1F2" Icon={FaTwitter} />
-          <SocialIcon href="https://facebook.com" color="#4267B2" Icon={FaFacebook} />
-          <SocialIcon href="https://google.com" color="#DB4437" Icon={FaGoogle} />
-          <SocialIcon href="https://pinterest.com" color="#E60023" Icon={FaPinterest} />
-          <SocialIcon href="https://linkedin.com" color="#0077B5" Icon={FaLinkedin} />
+          <SocialIcon href="mailto:cowboy9408@naver.com" color="#1DA1F2" Icon={FaEnvelope} />
+          <SocialIcon href="https://mail.google.com/mail/?view=cm&fs=1&to=qudwns9506@gmail.com" color="#4267B2" Icon={FaGoogle} />
+          <SocialIcon href="https://www.instagram.com/cowboy9408/" color="#DB4437" Icon={FaInstagram} />
+          <SocialIcon href="https://open.kakao.com/o/sXWRZtZg" color="#E60023" Icon={FaComments} />
+          <SocialIcon href="https://github.com/cowboy9408" color="#0077B5" Icon={FaGithub} />
         </IconContainer>
       </LandingContainer>
 
