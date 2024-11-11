@@ -16,9 +16,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Preloader = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
   width: 100%;
   height: 100vh;
   background-color: rgba(20, 20, 20, 1); /* 밝은 배경 색상 */
