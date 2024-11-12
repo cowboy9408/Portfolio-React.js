@@ -1,35 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import {Title, Subtitle, ContactIcons, SocialLink} from '../styles/contactStyle'
 import { FaEnvelope, FaGoogle, FaInstagram, FaComments, FaGithub, FaPhone } from 'react-icons/fa';
 
-const Title = styled.h1`
-  font-size: 2.5em;
-  color: #e74c3c;
-  text-align: center;
-`;
 
-const Subtitle = styled.p`
-  font-size: 1.2em;
-  color: #777;
-  text-align: center;
-`;
-
-const ContactIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-`;
-
-const SocialLink = styled.a`
-  color: white;
-  font-size: 1.5em;
-  transition: color 0.3s;
-
-  &:hover {
-    color: #e74c3c;
-  }
-`;
 
 const Contact = () => {
   // 하드코딩된 정보
