@@ -20,6 +20,15 @@ const SectionContainer = styled.section`
   justify-content: center;
   padding: 0;
   margin: 100px 0; /* 상하 간격으로 살짝 띄우기 */
+
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: 10px;
+    font-size: 14px;
+  }
 `;
 
 const LandingContainer = styled.section`
