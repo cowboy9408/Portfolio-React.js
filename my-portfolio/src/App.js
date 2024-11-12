@@ -104,18 +104,18 @@ function App() {
     <Spinner />
   </Loader>
 </Preloader>
-      <BackgroundSquaresContainer>
-        {squares.map((square, index) => (
-          <FloatingSquare
-            key={index}
-            top={square.top}
-            left={square.left}
-            size={square.size}
-            duration={square.duration}
-            delay={square.delay}
-          />
-        ))}
-      </BackgroundSquaresContainer>
+<BackgroundSquaresContainer>
+  {!isLoading && squares.map((square, index) => (
+    <FloatingSquare
+      key={index}
+      top={square.top}
+      left={square.left}
+      size={square.size}
+      duration={square.duration}
+      delay={square.delay}
+    />
+  ))}
+</BackgroundSquaresContainer>
       {!isLoading && <LandingPage />}
     </>
   );
