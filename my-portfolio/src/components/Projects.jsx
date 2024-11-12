@@ -12,7 +12,7 @@ const projectData = [
 const githubRepos = [
  {
   name: 'Project Xafe',
-  description: 'AED(자동 심장 충격기) 보관함 원격 모니터링 서비스 웹 애플리케이션입니다. 이 작업을 통해 javascript에 대해 좀 심도있게 알게되었고, 양방향 데이터 바인딩에 대해 이해하게 되었습니다.',
+  description: 'AED(자동 심장 충격기) 보관함 원격 모니터링 서비스 웹 애플리케이션입니다. 이 작업을 통해 Vue.js와 javascript에 대해 좀 심도있게 알게되었고, 양방향 데이터 바인딩에 대해 이해하게 되었습니다. 무엇보다 협업과 의사소통의 중요성을 몸소 실감하게 되었습니다.',
   html_url: 'https://github.com/cowboy9408/Xafe-Vue.js-',
   topics: ['JavaScript', 'Vue.js']
  },
