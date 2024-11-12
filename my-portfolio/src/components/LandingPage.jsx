@@ -62,6 +62,10 @@ const TypingContainer = styled.div`
   overflow: hidden;
 `;
 
+
+
+
+
 const LandingPage = () => {
   useEffect(() => {
     AOS.init({

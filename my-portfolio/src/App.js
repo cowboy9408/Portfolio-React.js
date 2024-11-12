@@ -26,6 +26,19 @@ const Preloader = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1000;
+
+   @media only screen and (max-width: 768px) {
+    bottom: 10px;
+    right: 20px;
+    height: 90vh;
+  }
+
+  @media only screen and (max-width: 480px) {
+    bottom: 5px;
+    right: 10px;
+    height: 80vh;
+  }
+
 `;
 
 const Loader = styled.div`
@@ -38,6 +51,18 @@ const Loader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+   @media only screen and (max-width: 768px) {
+    bottom: 10px;
+    right: 20px;
+    height: 90vh;
+  }
+
+  @media only screen and (max-width: 480px) {
+    bottom: 5px;
+    right: 10px;
+    height: 80vh;
+  }
 `;
 const spin = keyframes`
   0%, 100% { transform: translate(0); }
@@ -70,6 +95,18 @@ const BackgroundSquaresContainer = styled.div`
   height: 100%;
   overflow: hidden;
   z-index: -1;
+
+   @media only screen and (max-width: 768px) {
+    bottom: 10px;
+    right: 20px;
+    height: 90vh;
+  }
+
+  @media only screen and (max-width: 480px) {
+    bottom: 5px;
+    right: 10px;
+    height: 80vh;
+  }
 `;
 
 function App() {
