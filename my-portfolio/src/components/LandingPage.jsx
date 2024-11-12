@@ -1,4 +1,3 @@
-// LandingPage.js
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { FaEnvelope, FaGoogle, FaInstagram, FaComments, FaGithub } from 'react-icons/fa';
