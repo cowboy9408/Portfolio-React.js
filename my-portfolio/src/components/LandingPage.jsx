@@ -74,6 +74,14 @@ const Title = styled.h1`
   color: #e74c3c;
   margin: 0;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+   @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Subtitle = styled.h2`
@@ -88,6 +96,16 @@ const IconContainer = styled.div`
   display: flex;
   gap: 1.5em;
   margin-top: 20px;
+
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    gap: 5px;
+    margin-top: 10px;
+  }
 `;
 
 const TypingContainer = styled.div`
