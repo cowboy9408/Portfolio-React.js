@@ -16,18 +16,16 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     overflow-x: hidden;
 
-      /* 태블릿 */
-    @media only screen and (max-width: 768px) {
-      font-size: 14px;
+       @media only screen and (max-width: 768px) {
+      font-size: 15px;
     }
 
-    /* 모바일 */
     @media only screen and (max-width: 480px) {
-      font-size: 12px;
-      overflow: hidden;
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
       width: 100vw;
       height: 100vh;
-      box-sizing: border-box;
     }
   }
 `;
@@ -50,7 +48,7 @@ const Preloader = styled.div`
   }
 
   /* 모바일 */
-  @media only screen and (max-width: 480px) {
+   @media only screen and (max-width: 480px) {
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -75,7 +73,6 @@ const Loader = styled.div`
     height: 80px;
   }
 
-  /* 모바일 */
   @media only screen and (max-width: 480px) {
     width: 60px;
     height: 60px;
@@ -117,8 +114,8 @@ const BackgroundSquaresContainer = styled.div`
     height: 100vh;
   }
 
-  @media only screen and (max-width: 480px) {
-    display: none; /* 모바일 환경에서는 배경 사각형 숨김 */
+ @media only screen and (max-width: 480px) {
+    display: none;
   }
 
 `;
