@@ -25,9 +25,26 @@ const SectionContainer = styled.section`
     padding: 15px;
   }
 
-  @media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 480px) {
     padding: 10px;
     font-size: 14px;
+    margin: 30px 0; /* 여백을 더 축소하여 화면에 맞추기 */
+
+    h1, h2, h3 { /* 제목 크기 조정 */
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    p { /* 본문 텍스트 크기 조정 */
+      font-size: 0.9rem;
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    /* 요소 간격을 줄여 화면을 꽉 채우도록 설정 */
+    & > *:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 `;
 
