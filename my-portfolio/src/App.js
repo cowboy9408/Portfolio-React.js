@@ -13,12 +13,18 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     overflow-x: hidden;
 
-     @media only screen and (max-width: 768px) {
+      /* 태블릿 */
+    @media only screen and (max-width: 768px) {
       font-size: 14px;
     }
 
+    /* 모바일 */
     @media only screen and (max-width: 480px) {
       font-size: 12px;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
     }
   }
 `;
@@ -37,18 +43,14 @@ const Preloader = styled.div`
 
     /* 태블릿 */
   @media only screen and (max-width: 768px) {
-    bottom: 0;
-    right: 0;
-    height: 90vh;
+    height: 100vh;
   }
 
   /* 모바일 */
   @media only screen and (max-width: 480px) {
-    bottom: 0;
-    right: 0;
-    height: 80vh;
-    padding: 0;
+    height: 100vh;
     margin: 0;
+    padding: 0;
   }
 
 `;
@@ -64,11 +66,13 @@ const Loader = styled.div`
   align-items: center;
   justify-content: center;
 
-   @media only screen and (max-width: 768px) {
+    /* 태블릿 */
+  @media only screen and (max-width: 768px) {
     width: 80px;
     height: 80px;
   }
 
+  /* 모바일 */
   @media only screen and (max-width: 480px) {
     width: 60px;
     height: 60px;
@@ -107,11 +111,11 @@ const BackgroundSquaresContainer = styled.div`
   z-index: -1;
 
     @media only screen and (max-width: 768px) {
-    height: 90%;
+    height: 100vh;
   }
 
   @media only screen and (max-width: 480px) {
-    display: none; /* 모바일 환경에서는 배경 사각형을 숨김 */
+    display: none; /* 모바일 환경에서는 배경 사각형 숨김 */
   }
 
 `;
