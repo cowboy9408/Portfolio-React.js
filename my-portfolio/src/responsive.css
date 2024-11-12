@@ -1,0 +1,32 @@
+/* 모바일 스타일 */
+@media only screen and (max-width: 480px) {
+  .landing-page, .about-me, .contact, .projects, .skills, .timeline {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .landing-page h1, .about-me h2, .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card, .skill-item, .timeline-event {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 태블릿 스타일 */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .landing-page, .about-me, .contact, .projects, .skills, .timeline {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .project-card, .skill-item, .timeline-event {
+    margin: 10px;
+    padding: 15px;
+  }
+}

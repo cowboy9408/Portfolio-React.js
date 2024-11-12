@@ -5,6 +5,9 @@ import LandingPage from './components/LandingPage';
 import FloatingSquare from './components/FloatingSquare'; // FloatingSquare 가져오기
 import './vendors.min.css';
 import './normalize.css';
+import './responsive.css';
+
+
 
 const GlobalStyle = createGlobalStyle`
   body {
