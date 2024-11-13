@@ -23,8 +23,8 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 700px;
-  height: 500px;
+  width: 800px;
+  height: 650px;
   border-radius: 20px;
   background: linear-gradient(145deg, #4a4a4a, #222);
   box-shadow: 
@@ -53,10 +53,32 @@ export const Title = styled.h1`
   bottom: 5px;
 `;
 
-export const Description = styled.p`
-  font-size: 1.2em;
-  color: #ccc;
-  margin: 5px 0;
+export const Description = styled.div`
+       font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.1rem;
   line-height: 1.8;
-  letter-spacing: 0.5px;
+  color: #222;                  /* 배경과 대비되는 진한 색상 */
+  font-weight: 400;
+  margin: 5px 0;
+  text-align: left;              /* 전체 텍스트 왼쪽 정렬 */
+  position: relative;
+  top:10px;
+
+
+  .qa-item {
+    margin-bottom: 20px;
+  }
+
+  .question {
+    font-weight: 600;
+    color: #e74c3c;             /* 질문을 블루 톤으로 설정하여 시각적 구분 */
+    margin-bottom: 20px;         /* 질문과 답변 사이 여백 */
+  }
+
+  .answer {
+    color: #fff;                /* 차분하면서도 가독성 좋은 색상 */
+    font-weight: 400;
+    padding-left: 10px;         /* 답변을 약간 들여쓰기하여 구분감 */
+    margin-bottom: 40px;
+  }
 `;
