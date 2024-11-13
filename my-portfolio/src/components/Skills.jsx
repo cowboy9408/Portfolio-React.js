@@ -26,13 +26,13 @@ const skillsData = {
 
 
 function Skills() {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('all'); // 선택된 필터 상태 ('all'이 기본값)
 
   const handleFilterChange = (category) => {
-    setFilter(category);
+    setFilter(category); // 필터 상태를 선택된 카테고리로 변경
   };
 
-  const filteredSkills = [
+  const filteredSkills = [ // 현재 필터에 맞는 스킬 데이터 배열을 생성
     ...(filter === 'all' || filter === 'language' ? skillsData.languages : []),
     ...(filter === 'all' || filter === 'framework' ? skillsData.frameworks : []),
     ...(filter === 'all' || filter === 'database' ? skillsData.database : []),

@@ -12,17 +12,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-
-
-
-
-
 const LandingPage = () => {
   useEffect(() => {
+    // AOS 라이브러리를 초기화하여 스크롤 애니메이션을 설정합니다.
     AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
+      duration: 1000, // 애니메이션의 지속 시간 (밀리초)
+      easing: 'ease-in-out', // 애니메이션의 이징 효과
+      once: true, // 애니메이션이 한 번만 실행되도록 설정
     });
   }, []);
 
@@ -45,7 +41,7 @@ const LandingPage = () => {
       </LandingContainer>
 
       <SectionContainer id="about">
-        <AboutMe /> {/* AboutMe 컴포넌트가 표시되는지 확인 */}
+        <AboutMe /> 
       </SectionContainer>
 
       <SectionContainer id="skills">
@@ -61,7 +57,7 @@ const LandingPage = () => {
       </SectionContainer>
 
       <SectionContainer id="contact">
-        <Contact /> {/* Contact 컴포넌트가 표시되는지 확인 */}
+        <Contact /> 
       </SectionContainer>
     </>
   );
