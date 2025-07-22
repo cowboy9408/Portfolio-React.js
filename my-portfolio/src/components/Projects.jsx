@@ -27,6 +27,20 @@ const githubRepos = [
   html_url: 'https://github.com/cowboy9408/Xchat-react.js-',
   topics: ['JavaScript', 'React.js', 'styled-component',]
  },
+ {
+  name: 'LGInnotek Operation',
+  description: 'LG이노텍 공식 웹페이지이다. 전체적인 구축은 아니었지만 리뉴얼 및 신규 페이지 구축과 Hcaptcha 도입으로 웹사이트에 보안에 기여했습니다.',
+  homepage: 'https://www.lginnotek.com/support/qna.do',
+  topics: ['JSP', 'HTML', 'Hcaptcha',]
+ },
+ {
+  name: 'OneGroveMall 프로젝트',
+  description:'본 프로젝트에서는 CMS 관리자 페이지 구축과 전체 API 연동 작업을 전담하였습니다. 관리자 기능(UI 포함), 데이터 처리, 인증/인가 로직, 비동기 통신 처리 등 핵심 기능을 React 기반으로 구현하였으며, 퍼블리셔와의 협업을 통해 UI 디자인을 연동하였습니다.',
+  homepage: 'https://onegrove.kr/ko',
+  html_url:'https://github.com/cowboy9408/Onegrove',
+  topics: ['React.js']
+ },
+ 
 
 ];
 
@@ -64,13 +78,16 @@ const Projects = () => {
             <h3>{repo.name}</h3>
             <p>{repo.description}</p>
             {repo.homepage && (
-              <a className="highlight-link" href={repo.homepage} target="_blank" rel="noreferrer">
-                Demo
-              </a>
-            )}
-            <a className="highlight-link" href={repo.html_url} target="_blank" rel="noreferrer">
-              Github
-            </a>
+  <a className="highlight-link" href={repo.homepage} target="_blank" rel="noreferrer">
+    Demo
+  </a>
+)}
+
+{repo.html_url && (
+  <a className="highlight-link" href={repo.html_url} target="_blank" rel="noreferrer">
+    Github
+  </a>
+)}
             <div>
               {repo.topics?.map((topic, i) => (
                 <Tag key={i}>{topic}</Tag>

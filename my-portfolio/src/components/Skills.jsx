@@ -18,6 +18,8 @@ const skillsData = {
   ],
   tools: [
     { name: 'Git', weight: 70, image:'https://img.shields.io/badge/-Git-F05032?&style=for-the-badge&logo=Git&logoColor=white' },
+    {name: 'GitLab', weight:70, image:'https://img.shields.io/badge/-GitLab-FC6D26?&style=for-the-badge&logo=GitLab&logoColor=white' },
+    {name:'Postman', weight:70, image:'https://img.shields.io/badge/-Postman-FF6C37?&style=for-the-badge&logo=Postman&logoColor=white'},
     { name: 'VSCode', weight: 70, image:'https://img.shields.io/badge/-Visual Studio Code-007ACC?&style=for-the-badge&logo=Visual Studio Code&logoColor=white' },
     { name: 'Figma', weight: 70, image:'https://img.shields.io/badge/Figma-ff1493?style=for-the-badge&logo=Figma&logoColor=white' },
   ],

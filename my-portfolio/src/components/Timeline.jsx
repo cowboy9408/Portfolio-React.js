@@ -40,6 +40,27 @@ const timelineData = [
     tags: ['React.js', 'Third Project'],
     titleUrl: '#',
   },
+  {
+    title: '새로운 곳에서 새로운 도전!',
+    date: '2025-03',
+    subtitle: '새로운 곳에서 더 발전하고 도약하는 프론트엔드 개발자가 되기 위해 새로운 도전을 시도했습니다. 두번째 터전에서!',
+    tags: ['Second Career'],
+    titleUrl: '#',
+  },
+  {
+    title: '첫 유지운영 업무! 보안에 기여하다!',
+    date: '2025-03',
+    subtitle: 'LG이노텍과 LG복지몰에 Hcaptcha를 최초로 도입해 사이트 보안에 기여했습니다.',
+    tags: ['JSP','Hcaptcha'],
+    titleUrl: '#',
+  },
+  {
+    title: '대형 구축 프로젝트를 성공적으로 이끌다!',
+    date: '2025-07',
+    subtitle: '원그로브몰 CMS 구축 프로젝트의 메인 프론트엔드 개발자로써 서비스 오픈까지 성공적으로 주도했습니다!.',
+    tags: ['React.js'],
+    titleUrl: '#',
+  },
   // 추가 이벤트...
 ];
 
