@@ -36,7 +36,7 @@ const githubRepos = [
  {
   name: 'OneGroveMall 프로젝트',
   description:'본 프로젝트에서는 CMS 관리자 페이지 구축과 전체 API 연동 작업을 전담하였습니다. 관리자 기능(UI 포함), 데이터 처리, 인증/인가 로직, 비동기 통신 처리 등 핵심 기능을 React 기반으로 구현하였으며, 퍼블리셔와의 협업을 통해 UI 디자인을 연동하였습니다.',
-  homepage: 'https://onegrove.kr/ko',
+  homepage: 'https://admin-dev.onegrove.kr/',
   html_url:'https://github.com/cowboy9408/Onegrove',
   topics: ['React.js']
  },
@@ -101,3 +101,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
