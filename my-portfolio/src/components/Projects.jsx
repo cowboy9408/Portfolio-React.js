@@ -38,7 +38,7 @@ const githubRepos = [
     description:
       "LG이노텍 공식 웹페이지이다. 전체적인 구축은 아니었지만 리뉴얼 및 신규 페이지 구축과 Hcaptcha 도입으로 웹사이트에 보안에 기여했습니다.",
     homepage: "https://www.lginnotek.com/support/qna.do",
-    topics: ["JSP", "HTML", "Hcaptcha"],
+    topics: ["JSP", "HTML", "CSS", "Hcaptcha"],
   },
   {
     name: "OneGrove 관리자 CMS",
@@ -46,7 +46,7 @@ const githubRepos = [
       "본 프로젝트에서는 CMS 관리자 페이지 구축과 전체 API 연동 작업을 전담하였습니다. 관리자 기능(UI 포함), 데이터 처리, 인증/인가 로직, 비동기 통신 처리 등 핵심 기능을 React 기반으로 구현하였으며, 퍼블리셔와의 협업을 통해 UI 디자인을 연동하였습니다.",
     homepage: "https://admin-dev.onegrove.kr/",
     html_url: "https://github.com/cowboy9408/Onegrove",
-    topics: ["React.js"],
+    topics: ["React.js", "Tailwind"],
   },
   {
     name: "OneGroveMall",
